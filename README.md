@@ -1,102 +1,138 @@
 
-# Olist E-Commerce Data Analysis
+# E-Commerce Dataset Cleaning
 
 ## WeIntern Data Science Internship – Week 1
 
-## Project Overview
+### 1. Project Overview
 
-This project analyzes the Brazilian Olist E-Commerce dataset as part of the WeIntern Data Science Internship – Week 1 assignment.
+This project focuses on cleaning and preparing the Brazilian Olist E-Commerce dataset as part of the WeIntern Data Science Internship – Week 1 assignment.
 
-The objective is to clean and prepare raw datasets, analyze sales performance, identify customer purchasing patterns, calculate key business metrics, and communicate meaningful insights through visualizations and reports.
+The main objective is to inspect raw datasets, identify data quality issues, handle missing values, detect duplicates, perform data validation, and prepare clean datasets for further analysis.
 
-## Tasks Completed
+### 2. Task Objectives
 
-### Task 1: Data Cleaning
-- Dataset inspection and understanding
-- Missing value analysis and treatment
-- Duplicate detection and removal
-- Data validation and quality checks
-- Export of cleaned datasets
-- Documentation of cleaning decisions
+- Understand the structure of the datasets.
+- Inspect rows, columns, and data types.
+- Identify and analyze missing values.
+- Detect and investigate duplicate records.
+- Perform data validation checks.
+- Apply appropriate data cleaning techniques.
+- Export cleaned datasets.
+- Document cleaning decisions and results.
 
-### Task 2: Sales Data Analysis
-- Revenue calculation
-- Total order analysis
-- Average Order Value (AOV) calculation
-- Product category analysis
-- Monthly sales trend analysis
-- Regional sales analysis
-- Customer purchase behavior analysis
-- Payment method analysis
-- Business insights and recommendations
+### 3. Dataset Description
 
-### Task 3: Data Visualization
-- Bar chart – Top 10 product categories
-- Line chart – Monthly sales trends
-- Pie chart – Payment method distribution
-- Sales analytics dashboard
+The project uses nine CSV datasets:
 
-## Technologies Used
+1. Customers
+2. Geolocation
+3. Order Items
+4. Order Payments
+5. Order Reviews
+6. Orders
+7. Products
+8. Sellers
+9. Product Category Translation
+
+### 4. Data Cleaning Process
+
+The following steps were performed:
+
+1. Imported the required Python libraries.
+2. Loaded all nine raw datasets.
+3. Inspected dataset dimensions and data types.
+4. Analyzed missing values.
+5. Identified duplicate records.
+6. Performed data validation checks.
+7. Applied appropriate missing value treatment.
+8. Removed confirmed duplicate records.
+9. Exported cleaned datasets.
+10. Generated cleaning and validation reports.
+
+### 5. Cleaning Outputs
+
+The following reports were generated:
+
+- dataset_overview.csv
+- missing_values_report.csv
+- duplicate_analysis.csv
+- data_validation_report.csv
+- cleaning_decisions.csv
+- cleaning_summary.csv
+
+### 6. Technologies Used
 
 - Python
 - Pandas
 - NumPy
-- Matplotlib
-- Seaborn
 - Jupyter Notebook
 
-## Key Results
-
-| KPI | Result |
-|---|---:|
-| Delivered Product Revenue | R$ 13,221,498.11 |
-| Delivered Orders | 96,478 |
-| Average Order Value | R$ 137.04 |
-| Total Items Sold | 110,197 |
-| Top Revenue-Generating Category | Health & Beauty |
-
-*Note: Delivered Product Revenue and AOV are calculated using product prices, excluding freight charges.*
-
-## Project Structure
+### 7. Project Structure
 
 ```text
-data-science-week-assignment/
+Task-1_Data-Cleanning/
 │
 ├── data/
-│   ├── raw/                 # Original datasets
-│   └── cleaned/              # Cleaned datasets
+│   ├── raw/
+│   └── cleaned/
 │
 ├── notebook/
-│   └── 01_olist_ecommerce_week1_analysis.ipynb
+│   └── task1_data_cleaning.ipynb
 │
 ├── outputs/
-│   ├── charts/               # Data visualization charts
-│   ├── dashboard/            # Sales analytics dashboard
-│   └── reports/              # CSV reports and final PDF report
+│   └── reports/
 │
 ├── README.md
 ├── requirements.txt
 └── .gitignore
 ```
 
-## Key Deliverables
+### 8. How to Run the Project
 
+**Step 1:** Clone the repository.
+
+```bash
+git clone YOUR_TASK1_GITHUB_REPOSITORY_URL
+```
+
+**Step 2:** Navigate to the project directory.
+
+```bash
+cd Task-1_Data-Cleanning
+```
+
+**Step 3:** Install the dependencies.
+
+```bash
+pip install -r requirements.txt
+```
+
+**Step 4:** Open Jupyter Notebook.
+
+```bash
+jupyter notebook
+```
+
+**Step 5:** Open and execute:
+
+`notebook/task1_data_cleaning.ipynb`
+
+### 9. Expected Deliverables
+
+- Raw dataset inspection summary
+- Missing value report
+- Duplicate analysis
+- Data validation report
 - Cleaned datasets
-- Data analysis Jupyter Notebook
-- Data visualization charts
-- Sales analytics dashboard
-- Data cleaning and validation reports
-- Final analytical report
+- Cleaning decisions documentation
 
-## Dataset
-
-The project uses the Brazilian Olist E-Commerce public dataset, containing information about customers, orders, products, sellers, payments, reviews, and geolocation.
-
-## Author
+### 10. Author
 
 **Gaurav Varat**
 
-## Conclusion
+WeIntern Data Science Internship – Week 1
 
-This project demonstrates practical data science skills in data cleaning, exploratory data analysis, KPI calculation, business insight generation, data visualization, and analytical reporting.
+### 11. Conclusion
+
+This task demonstrates practical skills in data inspection, data quality assessment, missing value treatment, duplicate detection, data validation, and data preprocessing.
 

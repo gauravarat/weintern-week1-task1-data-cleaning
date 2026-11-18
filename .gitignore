@@ -1,9 +1,9 @@
-# Python cache
+
+# Python cache files
 __pycache__/
 *.py[cod]
-*$py.class
 
-# Jupyter Notebook
+# Jupyter Notebook temporary files
 .ipynb_checkpoints/
 
 # Virtual environments
@@ -22,10 +22,17 @@ env/
 # Operating system files
 .DS_Store
 Thumbs.db
+desktop.ini
 
 # Log files
 *.log
 
 # Temporary files
 *.tmp
-*.bak
+*.temp
+~$*
+
+# Python testing and coverage
+.pytest_cache/
+.coverage
+htmlcov/
